@@ -117,12 +117,10 @@
     return html`<div class="login-wrap"><div class="card login-card">
       <p class="brand">David <span>Epel</span></p>
       <p class="tag">Publishing Admin</p>
-      <p>Sign in with your epel.us account. Access is restricted.</p>
       <button class="btn btn-primary ms-btn" onClick=${props.onLogin} disabled=${!props.configured}>
         ${icon("badge")} Sign in
       </button>
       ${!props.configured && html`<p class="hint" style=${{ marginTop: "12px" }}>Microsoft sign-in isn't configured in <code>config.js</code> yet.</p>`}
-      <p class="hint" style=${{ marginTop: "12px" }}>Need access? <${HelpDesk} suffix=" to request it." /></p>
     </div></div>`;
   }
 
