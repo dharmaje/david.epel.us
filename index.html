@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>David Epel — david.epel.us</title>
+<link rel="canonical" href="https://david.epel.us/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="stylesheet" href="/fonts.css">
+<!-- Set the stored theme before first paint so there is no flash of the wrong mode.
+     No stored value = follow the system preference via the CSS media query below. -->
+<script>(function(){try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<style>
+  :root{
+    /* ---- DARK theme (default) — palette shared with jason.epel.us ---- */
+    --bg:#0B1F2A;
+    --bg-deep:#081821;
+    --card:#12303C;
+    --text:#DCE7EA;
+    --text-strong:#F2F7F7;
+    --text-dim:#8AA0A8;
+    --accent:#5FC7C9;
+    --hair:rgba(220,231,234,0.14);
+    --on-accent:#06161E;
+    color-scheme:dark;
+    --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --serif:"Fraunces",Georgia,serif;
+  }
+  :root[data-theme="light"]{
+    --bg:#F5F8F9;
+    --bg-deep:#E7EFF1;
+    --card:#FFFFFF;
+    --text:#20404A;
+    --text-strong:#0C2731;
+    --text-dim:#5A737C;
+    --accent:#0B6E70;
+    --hair:rgba(12,39,49,0.14);
+    --on-accent:#FFFFFF;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]):not([data-theme="light"]){
+      --bg:#F5F8F9;
+      --bg-deep:#E7EFF1;
+      --card:#FFFFFF;
+      --text:#20404A;
+      --text-strong:#0C2731;
+      --text-dim:#5A737C;
+      --accent:#0B6E70;
+      --hair:rgba(12,39,49,0.14);
+      --on-accent:#FFFFFF;
+      color-scheme:light;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{
+    display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;
+    font-family:var(--sans);
+    background:linear-gradient(180deg,var(--bg) 0%,var(--bg-deep) 100%);color:var(--text);
+    -webkit-font-smoothing:antialiased;line-height:1.65;
+  }
+  .card{
+    background:var(--card);border:1px solid var(--hair);border-top:3px solid var(--accent);
+    border-radius:12px;max-width:32rem;width:100%;padding:3rem 2.5rem;
+    box-shadow:0 1px 3px rgba(0,0,0,.2),0 20px 48px rgba(0,0,0,.25);
+  }
+  .brand{font-family:var(--serif);font-size:2rem;font-weight:500;letter-spacing:.2px;
+    color:var(--text-strong);margin:0 0 .3rem}
+  .brand em{font-style:italic;color:var(--accent)}
+  .tag{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--text-dim);margin:0 0 1.6rem}
+  p{margin:0 0 1.25rem;font-size:1.02rem}
+  .dim{color:var(--text-dim);font-size:.95rem;margin-bottom:0}
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1 class="brand">David&nbsp;<em>Epel</em></h1>
+    <p class="tag">david.epel.us</p>
+    <p>Pages on this site are shared by direct link and unlocked with an access code. If you were given a link and a code, open the link and enter your code to view the page.</p>
+    <p class="dim">Don’t have a code? Ask the person who shared the link with you.</p>
+  </main>
+</body>
+</html>
